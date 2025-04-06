@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $booking_id = $conn->insert_id;
 
         // Generate URL untuk struk
-        $url_struk = "http://localhost/mencobs/struk.php?id=" . $booking_id;
+        $url_struk = "https://github.com/novi966/selfitime";
 
         // Folder untuk menyimpan QR Code
         $qr_file = "qrcodes/" . $booking_id . ".png";

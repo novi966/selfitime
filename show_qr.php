@@ -5,7 +5,6 @@ if (!isset($_GET['id'])) {
 
 $booking_id = $_GET['id'];
 $qr_file = "qrcodes/" . $booking_id . ".png";
-$pdf_file = "struk/" . $booking_id . ".pdf";
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -27,6 +26,6 @@ $pdf_file = "struk/" . $booking_id . ".pdf";
 <body>
     <h2>Scan QR Code untuk Melihat Struk</h2>
     <img src="<?php echo $qr_file; ?>" alt="QR Code">
-    <p><a href="<?php echo $pdf_file; ?>" target="_blank">Lihat Struk</a></p>
+    <p><a href="http://localhost/mencobs/struk.php?id=<?= $booking_id ?>" target="_blank">Lihat Struk</a></p>
 </body>
 </html>
